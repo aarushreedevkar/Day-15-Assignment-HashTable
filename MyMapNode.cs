@@ -117,11 +117,14 @@ namespace HashTable {
 
         public void Display()
         {
-
+            //linkedlist is iterated in array
             foreach (var linkedList in items)
             {
-
+                //linkedlist may be null, if hashcode never generated the positon of array
                 if (linkedList != null)
+
+                    //if linkedlist is not null, linkedlist is iterated
+
                     foreach (keyValue<K, V> keyvalue in linkedList)
                     {
 
@@ -146,5 +149,5 @@ namespace HashTable {
     }
 }
 
-    
+
 
