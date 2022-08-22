@@ -45,9 +45,22 @@
                 hash.Add(element, count);
             }
             //getting the specific value from hashtable.
-            int frequency = hash.Get("they");
-            Console.WriteLine("frequency for they:\t" + frequency);
+            int frequency = hash.Get("avoidable");
+            Console.WriteLine("frequency for avoidable:\t" + frequency);
 
+            //Displaying all the elements from the linkedlist
+            Console.WriteLine();
+            Console.WriteLine("Displaying all the key value pairs in hash table");
+            hash.Display();
+
+            Console.WriteLine("**********************************************");
+
+            //removing avoidable word from the hashtable
+            hash.Remove("avoidable");
+            Console.WriteLine("Word removed from hashtable");
+            //getting the specific value from hashtable.
+            int removedWordFrequency = hash.Get("avoidable");
+            Console.WriteLine("frequency for avoidable:\t" + removedWordFrequency);
             //Displaying all the elements from the linkedlist
             Console.WriteLine();
             Console.WriteLine("Displaying all the key value pairs in hash table");
@@ -55,8 +68,26 @@
 
 
             Console.Read();
+            hash.Add(a, element);
+            a++;
+
+        }
+
+        int index = 18;
+        string choice = hash.Get(index);  // getting the specific value from hashtable.
+        Console.WriteLine("{0}th index values : is {1}", index, choice);
+
+int index2 = 15;
+        string choice2 = hash.Get(index2);
+        Console.WriteLine("{0}th index values : is {1}", index2, choice2);
+
+hash.Remove(index);//remove 18 index
+hash.Display();
+Console.Read();
+
+
+
 
 
         }
-    }
 }

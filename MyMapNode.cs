@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace HashTable { 
     public class MyMapNode
     {
-        //define a member elements of this class
         private readonly int size;//size of hashtable
         private readonly LinkedList<keyValue<K, V>>[] items;
 
@@ -148,6 +147,3 @@ namespace HashTable {
 
     }
 }
-
-
-
